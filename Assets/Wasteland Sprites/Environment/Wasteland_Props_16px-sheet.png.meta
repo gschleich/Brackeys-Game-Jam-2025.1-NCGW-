@@ -1,0 +1,1274 @@
+fileFormatVersion: 2
+guid: 524b206c0238a664d97679e7d65cbec1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8894283119814355059
+    second: Wasteland_Props_16px-sheet_0
+  - first:
+      213: -4231206300611996704
+    second: Wasteland_Props_16px-sheet_1
+  - first:
+      213: -1102449512064400368
+    second: Wasteland_Props_16px-sheet_2
+  - first:
+      213: 3471579515710528859
+    second: Wasteland_Props_16px-sheet_3
+  - first:
+      213: 8268602606379386905
+    second: Wasteland_Props_16px-sheet_4
+  - first:
+      213: -8472051486327970567
+    second: Wasteland_Props_16px-sheet_5
+  - first:
+      213: -4412435685944155411
+    second: Wasteland_Props_16px-sheet_6
+  - first:
+      213: -7271502224128129461
+    second: Wasteland_Props_16px-sheet_7
+  - first:
+      213: -5130266735730959834
+    second: Wasteland_Props_16px-sheet_8
+  - first:
+      213: -6189330530159655133
+    second: Wasteland_Props_16px-sheet_9
+  - first:
+      213: 498642940356813107
+    second: Wasteland_Props_16px-sheet_10
+  - first:
+      213: -7151572375651367751
+    second: Wasteland_Props_16px-sheet_11
+  - first:
+      213: 8432462058929779106
+    second: Wasteland_Props_16px-sheet_12
+  - first:
+      213: -3930592316442160950
+    second: Wasteland_Props_16px-sheet_13
+  - first:
+      213: 6988394556519747767
+    second: Wasteland_Props_16px-sheet_14
+  - first:
+      213: 3344384215198944694
+    second: Wasteland_Props_16px-sheet_15
+  - first:
+      213: -4541451327709778082
+    second: Wasteland_Props_16px-sheet_16
+  - first:
+      213: -5049457587791163075
+    second: Wasteland_Props_16px-sheet_17
+  - first:
+      213: -3453546149382268366
+    second: Wasteland_Props_16px-sheet_18
+  - first:
+      213: 1253647955043673091
+    second: Wasteland_Props_16px-sheet_19
+  - first:
+      213: -8187140872352102474
+    second: Wasteland_Props_16px-sheet_20
+  - first:
+      213: 2156847161234405988
+    second: Wasteland_Props_16px-sheet_21
+  - first:
+      213: 8241507271581326276
+    second: Wasteland_Props_16px-sheet_22
+  - first:
+      213: -3492782996809396890
+    second: Wasteland_Props_16px-sheet_23
+  - first:
+      213: -8827317605569854304
+    second: Wasteland_Props_16px-sheet_24
+  - first:
+      213: -3723949703098984244
+    second: Wasteland_Props_16px-sheet_25
+  - first:
+      213: 8171172715512337314
+    second: Wasteland_Props_16px-sheet_26
+  - first:
+      213: 2225250029373538961
+    second: Wasteland_Props_16px-sheet_27
+  - first:
+      213: -1559797686053119188
+    second: Wasteland_Props_16px-sheet_28
+  - first:
+      213: -8853543308676773112
+    second: Wasteland_Props_16px-sheet_29
+  - first:
+      213: 3694440790959484254
+    second: Wasteland_Props_16px-sheet_30
+  - first:
+      213: -8529564946910740841
+    second: Wasteland_Props_16px-sheet_31
+  - first:
+      213: -8635964063494595351
+    second: Wasteland_Props_16px-sheet_32
+  - first:
+      213: 6633198385538823490
+    second: Wasteland_Props_16px-sheet_33
+  - first:
+      213: -1231586650796510348
+    second: Wasteland_Props_16px-sheet_34
+  - first:
+      213: 1990535801117096779
+    second: Wasteland_Props_16px-sheet_35
+  - first:
+      213: -7363442183418323925
+    second: Wasteland_Props_16px-sheet_36
+  - first:
+      213: -6968182877302655876
+    second: Wasteland_Props_16px-sheet_37
+  - first:
+      213: -6822360904016695624
+    second: Wasteland_Props_16px-sheet_38
+  - first:
+      213: -161054131165516330
+    second: Wasteland_Props_16px-sheet_39
+  - first:
+      213: -7829739485386529587
+    second: Wasteland_Props_16px-sheet_40
+  - first:
+      213: 6243738085132066902
+    second: Wasteland_Props_16px-sheet_41
+  - first:
+      213: -8323537692000946908
+    second: Wasteland_Props_16px-sheet_42
+  - first:
+      213: 6010096830107611025
+    second: Wasteland_Props_16px-sheet_43
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 270
+        width: 23
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8756bf50a8219480800000000000000
+      internalID: -8894283119814355059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 270
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e390a8994cb745c0800000000000000
+      internalID: -4231206300611996704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 270
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0144992820053b0f0800000000000000
+      internalID: -1102449512064400368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 270
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5dd2732d278d2030800000000000000
+      internalID: 3471579515710528859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 270
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918cc16f24affb270800000000000000
+      internalID: 8268602606379386905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 271
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f4e99e5f0a3d6a80800000000000000
+      internalID: -8472051486327970567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 272
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2aa092f11e3c2c0800000000000000
+      internalID: -4412435685944155411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 272
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b464163d04f661b90800000000000000
+      internalID: -7271502224128129461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 271
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62ad0cdc591adc8b0800000000000000
+      internalID: -5130266735730959834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 271
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3278a50eca41b1aa0800000000000000
+      internalID: -6189330530159655133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 224
+        width: 16
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33169b1cc198be600800000000000000
+      internalID: 498642940356813107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 255
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4cdc3a0d280cc90800000000000000
+      internalID: -7151572375651367751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 223
+        width: 41
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1f774c09f160570800000000000000
+      internalID: 8432462058929779106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 224
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac0d5950d1bb379c0800000000000000
+      internalID: -3930592316442160950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 10
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b012a3b2d3cbf060800000000000000
+      internalID: 6988394556519747767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 225
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd4b5379b3a96e20800000000000000
+      internalID: 3344384215198944694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 223
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5fe12f341689f0c0800000000000000
+      internalID: -4541451327709778082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 223
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d319e4bb319bce9b0800000000000000
+      internalID: -5049457587791163075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 186
+        width: 43
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ad6a6231a8210d0800000000000000
+      internalID: -3453546149382268366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 186
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 304e5c94c2ad56110800000000000000
+      internalID: 1253647955043673091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 191
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b70f5101ce616e80800000000000000
+      internalID: -8187140872352102474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 191
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46abf20d019aeed10800000000000000
+      internalID: 2156847161234405988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 196
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb5768b237bf5270800000000000000
+      internalID: 8241507271581326276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 192
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dc6a5be54278fc0800000000000000
+      internalID: -3492782996809396890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 191
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a4057828611f7580800000000000000
+      internalID: -8827317605569854304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 187
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc81d51b97fd15cc0800000000000000
+      internalID: -3723949703098984244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 143
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a31a72ca46d56170800000000000000
+      internalID: 8171172715512337314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 143
+        width: 42
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 192cc31ac1da1ee10800000000000000
+      internalID: 2225250029373538961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 144
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2bd359c44c7a5ae0800000000000000
+      internalID: -1559797686053119188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 159
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80bc8c2d445e12580800000000000000
+      internalID: -8853543308676773112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 154
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d6adc435a454330800000000000000
+      internalID: 3694440790959484254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ef2c25fd5e0a980800000000000000
+      internalID: -8529564946910740841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 111
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec9d568074e62880800000000000000
+      internalID: -8635964063494595351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 112
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2457cb699cadd0c50800000000000000
+      internalID: 6633198385538823490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 90
+        width: 18
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4733921677688eee0800000000000000
+      internalID: -1231586650796510348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 106
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4b384ac3cdcf9b10800000000000000
+      internalID: 1990535801117096779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 79
+        width: 33
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2c593de85ccfc990800000000000000
+      internalID: -7363442183418323925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 79
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c747a64979a0c4f90800000000000000
+      internalID: -6968182877302655876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_38
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 58
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be629a77ea1251a0800000000000000
+      internalID: -6822360904016695624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_39
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 58
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dd254afe12d3cdf0800000000000000
+      internalID: -161054131165516330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_40
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 26
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc4afa9fb6d275390800000000000000
+      internalID: -7829739485386529587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_41
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 26
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650efda25b636a650800000000000000
+      internalID: 6243738085132066902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_42
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 26
+        width: 44
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42575b1b19adc7c80800000000000000
+      internalID: -8323537692000946908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Props_16px-sheet_43
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 26
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fe3406937286350800000000000000
+      internalID: 6010096830107611025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wasteland_Props_16px-sheet_0: -8894283119814355059
+      Wasteland_Props_16px-sheet_1: -4231206300611996704
+      Wasteland_Props_16px-sheet_10: 498642940356813107
+      Wasteland_Props_16px-sheet_11: -7151572375651367751
+      Wasteland_Props_16px-sheet_12: 8432462058929779106
+      Wasteland_Props_16px-sheet_13: -3930592316442160950
+      Wasteland_Props_16px-sheet_14: 6988394556519747767
+      Wasteland_Props_16px-sheet_15: 3344384215198944694
+      Wasteland_Props_16px-sheet_16: -4541451327709778082
+      Wasteland_Props_16px-sheet_17: -5049457587791163075
+      Wasteland_Props_16px-sheet_18: -3453546149382268366
+      Wasteland_Props_16px-sheet_19: 1253647955043673091
+      Wasteland_Props_16px-sheet_2: -1102449512064400368
+      Wasteland_Props_16px-sheet_20: -8187140872352102474
+      Wasteland_Props_16px-sheet_21: 2156847161234405988
+      Wasteland_Props_16px-sheet_22: 8241507271581326276
+      Wasteland_Props_16px-sheet_23: -3492782996809396890
+      Wasteland_Props_16px-sheet_24: -8827317605569854304
+      Wasteland_Props_16px-sheet_25: -3723949703098984244
+      Wasteland_Props_16px-sheet_26: 8171172715512337314
+      Wasteland_Props_16px-sheet_27: 2225250029373538961
+      Wasteland_Props_16px-sheet_28: -1559797686053119188
+      Wasteland_Props_16px-sheet_29: -8853543308676773112
+      Wasteland_Props_16px-sheet_3: 3471579515710528859
+      Wasteland_Props_16px-sheet_30: 3694440790959484254
+      Wasteland_Props_16px-sheet_31: -8529564946910740841
+      Wasteland_Props_16px-sheet_32: -8635964063494595351
+      Wasteland_Props_16px-sheet_33: 6633198385538823490
+      Wasteland_Props_16px-sheet_34: -1231586650796510348
+      Wasteland_Props_16px-sheet_35: 1990535801117096779
+      Wasteland_Props_16px-sheet_36: -7363442183418323925
+      Wasteland_Props_16px-sheet_37: -6968182877302655876
+      Wasteland_Props_16px-sheet_38: -6822360904016695624
+      Wasteland_Props_16px-sheet_39: -161054131165516330
+      Wasteland_Props_16px-sheet_4: 8268602606379386905
+      Wasteland_Props_16px-sheet_40: -7829739485386529587
+      Wasteland_Props_16px-sheet_41: 6243738085132066902
+      Wasteland_Props_16px-sheet_42: -8323537692000946908
+      Wasteland_Props_16px-sheet_43: 6010096830107611025
+      Wasteland_Props_16px-sheet_5: -8472051486327970567
+      Wasteland_Props_16px-sheet_6: -4412435685944155411
+      Wasteland_Props_16px-sheet_7: -7271502224128129461
+      Wasteland_Props_16px-sheet_8: -5130266735730959834
+      Wasteland_Props_16px-sheet_9: -6189330530159655133
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

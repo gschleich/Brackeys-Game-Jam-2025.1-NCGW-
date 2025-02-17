@@ -1,0 +1,884 @@
+fileFormatVersion: 2
+guid: d9e7a121d280ecd478d54f94f8c5ae9b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5596800051120859098
+    second: Wasteland_Buildings_16px_0
+  - first:
+      213: -1647039417645419644
+    second: Wasteland_Buildings_16px_1
+  - first:
+      213: 8916589710813698488
+    second: Wasteland_Buildings_16px_2
+  - first:
+      213: 5310281402795481081
+    second: Wasteland_Buildings_16px_3
+  - first:
+      213: 8045228575067771391
+    second: Wasteland_Buildings_16px_4
+  - first:
+      213: -1588129122064695376
+    second: Wasteland_Buildings_16px_5
+  - first:
+      213: 7194256751318000930
+    second: Wasteland_Buildings_16px_6
+  - first:
+      213: -4296717882239176495
+    second: Wasteland_Buildings_16px_7
+  - first:
+      213: -8742954549329151852
+    second: Wasteland_Buildings_16px_8
+  - first:
+      213: 8721343994215348528
+    second: Wasteland_Buildings_16px_9
+  - first:
+      213: 4310623478120937678
+    second: Wasteland_Buildings_16px_10
+  - first:
+      213: 6248853757311940913
+    second: Wasteland_Buildings_16px_11
+  - first:
+      213: -861482978742336199
+    second: Wasteland_Buildings_16px_12
+  - first:
+      213: 3428759003813607629
+    second: Wasteland_Buildings_16px_13
+  - first:
+      213: -2607765262122737906
+    second: Wasteland_Buildings_16px_14
+  - first:
+      213: -630527942775535343
+    second: Wasteland_Buildings_16px_15
+  - first:
+      213: -2544059083434627118
+    second: Wasteland_Buildings_16px_16
+  - first:
+      213: -7764146274486280357
+    second: Wasteland_Buildings_16px_17
+  - first:
+      213: 605893252363997097
+    second: Wasteland_Buildings_16px_18
+  - first:
+      213: -8514007646494777762
+    second: Wasteland_Buildings_16px_19
+  - first:
+      213: -8437000848140465714
+    second: Wasteland_Buildings_16px_20
+  - first:
+      213: 2736300829073799894
+    second: Wasteland_Buildings_16px_21
+  - first:
+      213: 3371251599229801519
+    second: Wasteland_Buildings_16px_22
+  - first:
+      213: -2276508290528718816
+    second: Wasteland_Buildings_16px_23
+  - first:
+      213: 9199169292850005715
+    second: Wasteland_Buildings_16px_24
+  - first:
+      213: 5825905332123986304
+    second: Wasteland_Buildings_16px_25
+  - first:
+      213: -8265797543691590973
+    second: Wasteland_Buildings_16px_26
+  - first:
+      213: 6017452939454016645
+    second: Wasteland_Buildings_16px_27
+  - first:
+      213: -7709640134285835405
+    second: Wasteland_Buildings_16px_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 624
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6289d02b10c2452b0800000000000000
+      internalID: -5596800051120859098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 623
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 483bd24406a8429e0800000000000000
+      internalID: -1647039417645419644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 623
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b914f099171ebb70800000000000000
+      internalID: 8916589710813698488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 623
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7dcfefcc8e1b940800000000000000
+      internalID: 5310281402795481081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 543
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff19cb973c466af60800000000000000
+      internalID: 8045228575067771391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_5
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 543
+        width: 63
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bf71ed4af4d5f9e0800000000000000
+      internalID: -1588129122064695376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_6
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 575
+        width: 57
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 225e345066227d360800000000000000
+      internalID: 7194256751318000930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 463
+        width: 58
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d0b011e9ddfe54c0800000000000000
+      internalID: -4296717882239176495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 463
+        width: 58
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498b9d7d829caa680800000000000000
+      internalID: -8742954549329151852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_9
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 511
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0393133b720780970800000000000000
+      internalID: 8721343994215348528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_10
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 447
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec87bd5f63962db30800000000000000
+      internalID: 4310623478120937678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_11
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 400
+        width: 29
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13971f9626368b650800000000000000
+      internalID: 6248853757311940913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_12
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 399
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93584009bc56b04f0800000000000000
+      internalID: -861482978742336199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_13
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 367
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc87bbac526659f20800000000000000
+      internalID: 3428759003813607629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_14
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 319
+        width: 42
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f12958f4b5fcbd0800000000000000
+      internalID: -2607765262122737906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 319
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11908ed3d2aef37f0800000000000000
+      internalID: -630527942775535343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_16
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 319
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfe54c1ebfa1bcd0800000000000000
+      internalID: -2544059083434627118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_17
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 239
+        width: 90
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5f921d7916304490800000000000000
+      internalID: -7764146274486280357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_18
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 239
+        width: 64
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9af46fee3b0986800800000000000000
+      internalID: 605893252363997097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_19
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 17
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e18b7972b28d980800000000000000
+      internalID: -8514007646494777762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_20
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 159
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec90be40e60c9ea80800000000000000
+      internalID: -8437000848140465714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_21
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 159
+        width: 32
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dafc834b1b49f520800000000000000
+      internalID: 2736300829073799894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 160
+        width: 18
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f245f84c77719ce20800000000000000
+      internalID: 3371251599229801519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_23
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 160
+        width: 17
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 020ddce65c73860e0800000000000000
+      internalID: -2276508290528718816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_24
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 160
+        width: 18
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d681098bb30aaf70800000000000000
+      internalID: 9199169292850005715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_25
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 140
+        width: 48
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089ed485806c9d050800000000000000
+      internalID: 5825905332123986304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_26
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 98
+        width: 66
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c267f69decf94d80800000000000000
+      internalID: -8265797543691590973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_27
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 46
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c69cc0199428350800000000000000
+      internalID: 6017452939454016645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wasteland_Buildings_16px_28
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 15
+        width: 130
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3734cc1352bd10590800000000000000
+      internalID: -7709640134285835405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Wasteland_Buildings_16px_0: -5596800051120859098
+      Wasteland_Buildings_16px_1: -1647039417645419644
+      Wasteland_Buildings_16px_10: 4310623478120937678
+      Wasteland_Buildings_16px_11: 6248853757311940913
+      Wasteland_Buildings_16px_12: -861482978742336199
+      Wasteland_Buildings_16px_13: 3428759003813607629
+      Wasteland_Buildings_16px_14: -2607765262122737906
+      Wasteland_Buildings_16px_15: -630527942775535343
+      Wasteland_Buildings_16px_16: -2544059083434627118
+      Wasteland_Buildings_16px_17: -7764146274486280357
+      Wasteland_Buildings_16px_18: 605893252363997097
+      Wasteland_Buildings_16px_19: -8514007646494777762
+      Wasteland_Buildings_16px_2: 8916589710813698488
+      Wasteland_Buildings_16px_20: -8437000848140465714
+      Wasteland_Buildings_16px_21: 2736300829073799894
+      Wasteland_Buildings_16px_22: 3371251599229801519
+      Wasteland_Buildings_16px_23: -2276508290528718816
+      Wasteland_Buildings_16px_24: 9199169292850005715
+      Wasteland_Buildings_16px_25: 5825905332123986304
+      Wasteland_Buildings_16px_26: -8265797543691590973
+      Wasteland_Buildings_16px_27: 6017452939454016645
+      Wasteland_Buildings_16px_28: -7709640134285835405
+      Wasteland_Buildings_16px_3: 5310281402795481081
+      Wasteland_Buildings_16px_4: 8045228575067771391
+      Wasteland_Buildings_16px_5: -1588129122064695376
+      Wasteland_Buildings_16px_6: 7194256751318000930
+      Wasteland_Buildings_16px_7: -4296717882239176495
+      Wasteland_Buildings_16px_8: -8742954549329151852
+      Wasteland_Buildings_16px_9: 8721343994215348528
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
