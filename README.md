@@ -25,7 +25,7 @@
 * TBD
 
 ## Friday:
-* TBD
+* ADD game audio
 
 ## Saturday:
 * Last testing and bug fixes
