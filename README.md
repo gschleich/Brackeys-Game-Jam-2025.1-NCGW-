@@ -20,6 +20,7 @@
 * Enemy health/death implemented ✅
 * Enemy way points created/implemented
 * Repair hammer implemented
+* Turrent repair mini game
 
 ## Thursday:
 * TBD
