@@ -230,6 +230,7 @@ MonoBehaviour:
   player: {fileID: 421690899}
   weaponSprite: {fileID: 284590559}
   bulletSpawnPoint: {fileID: 1232239539}
+  bulletPrefab: {fileID: 4701159946405438987, guid: 7a5f333d73e91e748abf5f5ae02c670b, type: 3}
 --- !u!212 &284590559
 SpriteRenderer:
   m_ObjectHideFlags: 0
