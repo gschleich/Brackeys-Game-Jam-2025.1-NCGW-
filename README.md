@@ -6,21 +6,21 @@
 ## Monday:
 * Map Created ✅
 * Character movement implemented ✅
-* Turrent Assests created ✅
+* Turret Assests created ✅
 
 ## Tuesday:
-* Turrent waypoint/tracking implemented
-* Turrent shooting implemented
+* Turret waypoint/tracking implemented
+* Turret shooting implemented
 * Character guns implemented ✅
 * Base Health implemented
 * Base door implementation
 
 ## Wednesday:
-* Turrent health
+* Turret health
 * Enemy health/death implemented ✅
 * Enemy way points created/implemented
 * Repair hammer implemented
-* Turrent repair mini game
+* Turret repair mini game
 
 ## Thursday:
 * TBD
