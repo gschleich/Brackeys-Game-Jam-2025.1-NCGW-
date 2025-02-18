@@ -2,11 +2,14 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
+    public float damage = 1f; //damage value
     public float speed = 5f; // Bullet speed
+    public float lifetime = 3f; //Destroy bullet after some time
 
     void Start()
     {
         SetDirectionAndRotation();
+        Destroy(gameObject, lifetime); //destroy after lifetime
     }
 
     void SetDirectionAndRotation()
@@ -22,4 +25,6 @@ public class BulletController : MonoBehaviour
 
         GetComponent<Rigidbody2D>().linearVelocity = direction * speed;
     }
+
+    
 }
