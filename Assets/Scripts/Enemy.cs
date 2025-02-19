@@ -4,6 +4,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] float health, maxHealth = 3f;
     [SerializeField] FloatingHealthBar healthBar;
+    public GameObject scrapMetalPrefab;
     public WaveManager waveManager;
     // public float damage = 1f;
 
@@ -37,7 +38,17 @@ public class Enemy : MonoBehaviour
         {
             waveManager.EnemyDefeated();
         }
+        SpawnScrapMetal();
     }
+
+    void SpawnScrapMetal()
+    {
+        if (scrapMetalPrefab != null)
+        {
+            Instantiate(scrapMetalPrefab, transform.position, Quaternion.identity);
+        }
+    }
+
     public void TakeDamage(float damage){
         health -= damage;
         healthBar.UpdateHealthBar(health, maxHealth);

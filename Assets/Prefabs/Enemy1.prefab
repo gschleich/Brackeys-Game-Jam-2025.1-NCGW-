@@ -510,6 +510,7 @@ MonoBehaviour:
   health: 0
   maxHealth: 3
   healthBar: {fileID: 0}
+  scrapMetalPrefab: {fileID: 4568040079630574216, guid: 8bcebad89fb230f4abd0ff6cdec21de2, type: 3}
   waveManager: {fileID: 0}
 --- !u!114 &5197101829852353941
 MonoBehaviour:
