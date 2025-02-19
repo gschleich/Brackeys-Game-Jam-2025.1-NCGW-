@@ -12,15 +12,14 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
-        // Automatically find the "Wasteland Base" object in the scene
-        GameObject baseObject = GameObject.Find("Wasteland Base");
+        GameObject baseObject = GameObject.Find("EnemyWalkHere");
         if (baseObject != null)
         {
-            target = baseObject.transform; // Set target to Wasteland Base
+            target = baseObject.transform; // Set target to EnemyWalkHere Object
         }
         else
         {
-            Debug.LogError("Wasteland Base object not found in the scene!");
+            Debug.LogError("EnemyWalkHere object not found in the scene!");
         }
     }
 
