@@ -1,18 +1,81 @@
 using UnityEngine;
+using System.Collections;
+
 public class AutoTurret : MonoBehaviour
 {
-    public Transform target; // Assign the target in the Inspector or dynamically
+    public Transform target; // The current target enemy
+    public float range = 5f; // Detection range of the turret
+    public float fireRate = 1f; // Rate of fire (bullets per second)
+    public GameObject TurretBulletPrefab; // Bullet prefab to shoot
+    public Transform TurretBulletSpawnPoint; // Where bullets are fired from
     public SpriteRenderer spriteRenderer; // Assign the turret's sprite renderer
-    
+    private float fireCooldown = 0f; // Internal timer for shooting
+
     void Update()
     {
-        if (target == null) return;
-        // Calculate direction to target
-        Vector3 direction = target.position - transform.position;
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        // Apply rotation
-        transform.rotation = Quaternion.Euler(0, 0, angle);
-        // Flip the sprite based on the rotation
-        spriteRenderer.flipY = angle > 90 || angle < -90;
+    FindTarget(); // Find the closest enemy
+
+    if (target == null) return;
+
+    // Calculate direction to target
+    Vector3 direction = target.position - transform.position;
+    float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+
+    // Apply rotation to the turret
+    transform.rotation = Quaternion.Euler(0, 0, angle);
+
+    // Flip the turret sprite (but not the spawn point)
+    bool shouldFlip = angle > 90 || angle < -90;
+    spriteRenderer.flipY = shouldFlip;
+
+    // **Ensure the bullet spawn point doesn't flip**
+    TurretBulletSpawnPoint.rotation = Quaternion.identity; // Keep it aligned properly
+
+    //**Fire Bullets at a Rate of `fireRate` Bullets Per Second**
+    fireCooldown -= Time.deltaTime;
+    if (fireCooldown <= 0f)
+    {
+        Shoot();
+        fireCooldown = 1f / fireRate; // Reset cooldown
+    }
+    }
+
+    void FindTarget()
+    {
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy"); // Find all enemies
+        float shortestDistance = Mathf.Infinity;
+        Transform nearestEnemy = null;
+
+        foreach (GameObject enemy in enemies)
+        {
+            float distanceToEnemy = Vector2.Distance(transform.position, enemy.transform.position);
+            if (distanceToEnemy < shortestDistance && distanceToEnemy <= range)
+            {
+                shortestDistance = distanceToEnemy;
+                nearestEnemy = enemy.transform;
+            }
+        }
+
+        target = nearestEnemy; // Assign nearest enemy as the target
+    }
+
+    void Shoot()
+    {
+        if (TurretBulletPrefab != null && TurretBulletSpawnPoint != null && target != null)
+        {
+            GameObject bullet = Instantiate(TurretBulletPrefab, TurretBulletSpawnPoint.position, TurretBulletSpawnPoint.rotation);
+            TurretBulletController bulletScript = bullet.GetComponent<TurretBulletController>();
+            if (bulletScript != null)
+            {
+                bulletScript.SetDirection((target.position - TurretBulletSpawnPoint.position).normalized);
+            }
+        }
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        // Draw detection range in Scene view
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }
