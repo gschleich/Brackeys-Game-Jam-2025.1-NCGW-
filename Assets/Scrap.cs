@@ -11,10 +11,12 @@ public class Scrap : MonoBehaviour, ICollectible
     bool hasTarget;
     Vector3 targetPosition;
     float moveSpeed = 5f;
+    float lifetime = 5f;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        Destroy(gameObject, lifetime);
     }
 
     public void Collect()
@@ -37,5 +39,9 @@ public class Scrap : MonoBehaviour, ICollectible
     {
         targetPosition = position;
         hasTarget = true;
+    }
+
+    public void OnApplicationQuit(){
+        Destroy(gameObject);
     }
 }
