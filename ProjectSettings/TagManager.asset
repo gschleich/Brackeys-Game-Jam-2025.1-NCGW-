@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 3
   tags:
   - Bullet
+  - Enemy
+  - Hammer
+  - Barricade
   layers:
   - Default
   - TransparentFX

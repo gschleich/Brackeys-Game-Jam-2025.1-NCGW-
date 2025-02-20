@@ -4499,7 +4499,7 @@ GameObject:
   - component: {fileID: 908089764}
   m_Layer: 0
   m_Name: BarricadeRight
-  m_TagString: Untagged
+  m_TagString: Barricade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5915,7 +5915,7 @@ GameObject:
   - component: {fileID: 1820444501}
   m_Layer: 0
   m_Name: Hammer
-  m_TagString: Untagged
+  m_TagString: Hammer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6029,6 +6029,8 @@ MonoBehaviour:
   hammerSprite: {fileID: 1820444498}
   animator: {fileID: 1820444499}
   hammerCollider: {fileID: 1820444501}
+  barricade: {fileID: 908089764}
+  scrapText: {fileID: 89735793}
 --- !u!58 &1820444501
 CircleCollider2D:
   m_ObjectHideFlags: 0

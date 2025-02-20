@@ -42,6 +42,15 @@ public class Barricade : MonoBehaviour
         }
     }
 
+    public void Repair(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+        UpdateHealthUI();
+        UpdateAnimation();
+    }
+
     private void UpdateHealthUI()
     {
         if (healthBarImage != null && healthBarSprites.Length == 6)
