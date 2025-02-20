@@ -30,6 +30,7 @@
 * Implement second enemy type (Anthony)
 * Create Second/Third Turret types
 * Implement gun drop chance (Anthony)
+* Wave UI (Garrett)
 
 ## Friday:
 * ADD game audio
