@@ -31,6 +31,7 @@
 
 ## Friday:
 * ADD game audio
+* Implement Home screen
 
 ## Saturday:
 * Last testing and bug fixes
