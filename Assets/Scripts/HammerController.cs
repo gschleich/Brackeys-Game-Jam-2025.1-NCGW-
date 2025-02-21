@@ -14,6 +14,7 @@ public class HammerController : MonoBehaviour
     private bool isSwinging = false; // Tracks if the hammer is in a swinging state
     private bool canRepair = true; // Ensures only one repair per click
     private bool isFlipped = false; // Track current flip state
+    private bool isCollidingWithBarricade = false; // Tracks if the hammer is colliding with the barricade
 
     void Update()
     {
@@ -21,7 +22,7 @@ public class HammerController : MonoBehaviour
         HandleSwing();
 
         // Repair Logic: Only repair if hammer is swinging, player has enough scrap, and canRepair is true
-        if (isSwinging && canRepair && scrapText.HasEnoughScrap(1))
+        if (isSwinging && canRepair && scrapText.HasEnoughScrap(1) && isCollidingWithBarricade)
         {
             RepairBarricade();
         }
@@ -76,5 +77,21 @@ public class HammerController : MonoBehaviour
         barricade.Repair(1); // Repair the barricade by 1 health
         scrapText.UseScrap(1); // Subtract 1 scrap from the UI
         canRepair = false; // Prevent repairing again until the next swing
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Barricade"))
+        {
+            isCollidingWithBarricade = true; // Hammer is colliding with the barricade
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Barricade"))
+        {
+            isCollidingWithBarricade = false; // Hammer is no longer colliding with the barricade
+        }
     }
 }

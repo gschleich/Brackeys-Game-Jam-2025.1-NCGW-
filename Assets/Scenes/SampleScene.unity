@@ -248,8 +248,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: 0}
-  m_SizeDelta: {x: 150, y: 150}
+  m_AnchoredPosition: {x: 910, y: 0}
+  m_SizeDelta: {x: 1620, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &89735791
 MonoBehaviour:
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 32
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1284,7 +1284,6 @@ GameObject:
   - component: {fileID: 385473523}
   - component: {fileID: 385473524}
   - component: {fileID: 385473525}
-  - component: {fileID: 385473526}
   m_Layer: 0
   m_Name: WastelandBase
   m_TagString: Untagged
@@ -1355,7 +1354,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385473517}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1439,22 +1438,6 @@ MonoBehaviour:
   openingAnimationBool: IsOpening
   openAnimationBool: IsOpen
   closingAnimationBool: IsClosing
---- !u!114 &385473526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 385473517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02c3eea4c6b964f4c9f5372e0fdcee05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 1487247825}
-  healthAmount: 1
-  baseCollider: {fileID: 2092822479}
-  objectToToggle: {fileID: 1151777006}
 --- !u!1 &397544412
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,7 +1585,6 @@ GameObject:
   - component: {fileID: 421690903}
   - component: {fileID: 421690905}
   - component: {fileID: 421690901}
-  - component: {fileID: 421690900}
   - component: {fileID: 421690904}
   m_Layer: 0
   m_Name: Player
@@ -1679,26 +1661,13 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 934814416}
-  - {fileID: 1948018418}
   - {fileID: 284590557}
   - {fileID: 1425688396}
   - {fileID: 397544413}
+  - {fileID: 934814416}
+  - {fileID: 1948018418}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &421690900
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 421690897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf1bcaf07db959e429f029f60170947d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
 --- !u!50 &421690901
 Rigidbody2D:
   serializedVersion: 5
@@ -4035,7 +4004,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.25
+  m_Radius: 0.6
 --- !u!114 &934814418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9809,6 +9778,7 @@ GameObject:
   - component: {fileID: 2092822478}
   - component: {fileID: 2092822479}
   - component: {fileID: 2092822480}
+  - component: {fileID: 2092822481}
   m_Layer: 0
   m_Name: GarageDoor
   m_TagString: Untagged
@@ -9866,7 +9836,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.1, y: -2.2}
+  m_Offset: {x: -0.100000024, y: -1.8018329}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9876,7 +9846,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2, y: 1}
+  m_Size: {x: 2, y: 0.20366466}
   m_EdgeRadius: 0
 --- !u!114 &2092822480
 MonoBehaviour:
@@ -9890,6 +9860,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8183488f68ae1d44cb451be2aa3e02d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2092822481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092822477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02c3eea4c6b964f4c9f5372e0fdcee05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 1487247825}
+  healthAmount: 100
+  baseCollider: {fileID: 2092822479}
+  objectToToggle: {fileID: 1151777006}
 --- !u!1 &2105526132
 GameObject:
   m_ObjectHideFlags: 0
