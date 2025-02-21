@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using System;
 
 public class Scrap : MonoBehaviour, ICollectible
@@ -17,6 +18,9 @@ public class Scrap : MonoBehaviour, ICollectible
     {
         rb = GetComponent<Rigidbody2D>();
         Destroy(gameObject, lifetime);
+
+        // Listen for scene reload
+        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
 
     public void Collect()
@@ -28,10 +32,10 @@ public class Scrap : MonoBehaviour, ICollectible
 
     private void FixedUpdate()
     {
-        if(hasTarget)
+        if (hasTarget)
         {
             Vector2 targetDirection = (targetPosition - transform.position).normalized;
-            rb.linearVelocity = new Vector2(targetDirection.x, targetDirection.y) * moveSpeed;
+            rb.linearVelocity = targetDirection * moveSpeed;
         }
     }
 
@@ -41,7 +45,14 @@ public class Scrap : MonoBehaviour, ICollectible
         hasTarget = true;
     }
 
-    public void OnApplicationQuit(){
+    private void OnSceneUnloaded(Scene current)
+    {
         Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        // Unsubscribe to prevent memory leaks
+        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
 }
