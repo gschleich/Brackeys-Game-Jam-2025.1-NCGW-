@@ -23,7 +23,7 @@
 ## Thursday:
 * Turret health (Anthony)
 * Turret repair mini game (Garrett)
-* Create You Lose screen (Garrett)
+* Create You Lose screen (Garrett) ✅
 * Create base collider (Garrett)
 * Main menu / Audio settings (Garrett)
 * Create Lose condition (Anthony)
