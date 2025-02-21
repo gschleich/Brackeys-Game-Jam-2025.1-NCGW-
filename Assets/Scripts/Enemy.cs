@@ -5,6 +5,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float health, maxHealth = 3f;
     [SerializeField] FloatingHealthBar healthBar;
     public GameObject scrapMetalPrefab;
+    public GameObject[] weaponPrefabs; // Assign weapons prefabs in the Inspector
     public WaveManager waveManager;
     // public float damage = 1f;
 
@@ -39,6 +40,7 @@ public class Enemy : MonoBehaviour
             waveManager.EnemyDefeated();
         }
         SpawnScrapMetal();
+        TryDropWeapon();
     }
 
     void SpawnScrapMetal()
@@ -46,6 +48,21 @@ public class Enemy : MonoBehaviour
         if (scrapMetalPrefab != null)
         {
             Instantiate(scrapMetalPrefab, transform.position, Quaternion.identity);
+        }
+    }
+    
+    void TryDropWeapon()
+    {
+        float dropChance = Random.value; // Generates a random number between 0 and 1
+
+        if (dropChance <= 0.10f) // 10% chance
+        {
+            if (weaponPrefabs.Length > 0)
+            {
+                int randomIndex = Random.Range(0, weaponPrefabs.Length); // Pick a random weapon
+                Instantiate(weaponPrefabs[randomIndex], transform.position, Quaternion.identity);
+                Debug.Log("Weapon Dropped!");
+            }
         }
     }
 
