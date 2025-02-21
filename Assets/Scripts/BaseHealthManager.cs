@@ -7,6 +7,8 @@ public class BaseHealthManager : MonoBehaviour
     public Image healthBar;
     public float healthAmount = 100f;
     public Collider2D baseCollider;
+    public GameObject objectToToggle; // GameObject to enable/disable when health reaches 0
+    private bool isGameOver = false;
 
     private void Start()
     {
@@ -18,6 +20,11 @@ public class BaseHealthManager : MonoBehaviour
         if (baseCollider != null)
         {
             baseCollider.isTrigger = true;
+        }
+
+        if (objectToToggle != null)
+        {
+            objectToToggle.SetActive(false); // Make sure it's initially inactive
         }
     }
 
@@ -31,9 +38,15 @@ public class BaseHealthManager : MonoBehaviour
 
     void Update()
     {
-        if (healthAmount <= 0)
+        if (healthAmount <= 0 && !isGameOver)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (objectToToggle != null)
+            {
+                objectToToggle.SetActive(true); // Activate the object when health hits 0
+            }
+            isGameOver = true; // Prevent reactivating or reloading the scene multiple times
+            // Optionally, reload the scene after a delay:
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
