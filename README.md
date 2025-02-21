@@ -23,14 +23,15 @@
 ## Thursday:
 * Turret health (Anthony)
 * Turret repair mini game (Garrett)
-* Create You Lose screen (Garrett) ✅
+* Create Game Over screen (Garrett) ✅
 * Create base collider (Garrett)
 * Main menu / Audio settings (Garrett)
-* Create Lose condition (Anthony)
+* Create Lose condition ✅
 * Implement second enemy type (Anthony)
 * Create Second/Third Turret types
 * Implement gun drop chance (Anthony)
 * Wave UI (Garrett)
+* Bug fixes ✅
 
 ## Friday:
 * ADD game audio
