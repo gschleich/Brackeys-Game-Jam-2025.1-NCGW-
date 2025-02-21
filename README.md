@@ -35,6 +35,14 @@
 ## Friday:
 * ADD game audio
 * Implement Home screen
+* Turret Malfunction / repair, remove player bullets hurting barricade
+* Wave UI
+* Barricade x4, spikes
+* Build / upgrade system (turret fire rate/range), placing objects
+* Scrap Highscore? Time Highscore?
+* Audio Manager
+* 3rd slot, weapons
+* Enemy Pathing/Attacking/breaking objects/dropping weapons
 
 ## Saturday:
 * Last testing and bug fixes
