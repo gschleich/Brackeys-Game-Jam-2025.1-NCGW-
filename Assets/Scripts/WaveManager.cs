@@ -12,7 +12,8 @@ public class WaveManager : MonoBehaviour
     public int waveNumber = 1;
     
     public Transform[] spawnPoints; // Assign in inspector
-    public GameObject enemyPrefab; // Assign enemy prefab
+    public GameObject enemyPrefab; // Assign enemy1 prefab
+    public GameObject enemyPrefab2; // Assign enemy2 prefab
     public int baseEnemyCount = 5; // Base enemy count per wave
 
     private int currentEnemies;
@@ -64,7 +65,21 @@ public class WaveManager : MonoBehaviour
         if (spawnPoints.Length == 0) return;
 
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject enemy = Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
+
+        GameObject enemyToSpawn;
+
+        if (waveNumber > 3) // Start mixing enemy types after wave 3
+        {
+            // 1/3 chance to spawn enemyPrefab2, 2/3 chance to spawn enemyPrefab
+            enemyToSpawn = (Random.value <= 0.33f) ? enemyPrefab2 : enemyPrefab;
+        }
+        else
+        {
+            // Before wave 4, spawn only enemyPrefab
+            enemyToSpawn = enemyPrefab;
+        }
+
+        GameObject enemy = Instantiate(enemyToSpawn, spawnPoint.position, Quaternion.identity);
         enemy.GetComponent<Enemy>().waveManager = this; // Reference for tracking
     }
 
