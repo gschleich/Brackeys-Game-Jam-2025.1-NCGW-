@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 public class HammerController : MonoBehaviour
 {
@@ -8,13 +9,13 @@ public class HammerController : MonoBehaviour
     public Animator animator;
     public CircleCollider2D hammerCollider; // Reference to the collider
 
-    public Barricade barricade; // Reference to the barricade
+    public List<Barricade> barricades = new List<Barricade>(); // Multiple barricades
     public ScrapText scrapText; // Reference to the scrap UI
 
     private bool isSwinging = false; // Tracks if the hammer is in a swinging state
     private bool canRepair = true; // Ensures only one repair per click
     private bool isFlipped = false; // Track current flip state
-    private bool isCollidingWithBarricade = false; // Tracks if the hammer is colliding with the barricade
+    private HashSet<Barricade> collidingBarricades = new HashSet<Barricade>(); // Tracks currently colliding barricades
 
     void Update()
     {
@@ -22,9 +23,9 @@ public class HammerController : MonoBehaviour
         HandleSwing();
 
         // Repair Logic: Only repair if hammer is swinging, player has enough scrap, and canRepair is true
-        if (isSwinging && canRepair && scrapText.HasEnoughScrap(1) && isCollidingWithBarricade)
+        if (isSwinging && canRepair && scrapText.HasEnoughScrap(1) && collidingBarricades.Count > 0)
         {
-            RepairBarricade();
+            RepairBarricades();
         }
     }
 
@@ -39,27 +40,26 @@ public class HammerController : MonoBehaviour
         hammerPivot.rotation = Quaternion.Euler(new Vector3(0, 0, angle));
 
         bool shouldFlip = mousePosition.x < player.position.x;
-        if (shouldFlip != isFlipped) // Only update if flip state changes
+        if (shouldFlip != isFlipped)
         {
             isFlipped = shouldFlip;
             hammerSprite.flipY = isFlipped;
 
             // Flip the collider by modifying its offset
             Vector2 colliderOffset = hammerCollider.offset;
-            colliderOffset.y *= -1; // Mirror the y offset
+            colliderOffset.y *= -1;
             hammerCollider.offset = colliderOffset;
         }
     }
 
     void HandleSwing()
     {
-        if (Input.GetMouseButtonDown(0) && !isSwinging) // Left click to swing
+        if (Input.GetMouseButtonDown(0) && !isSwinging)
         {
             isSwinging = true;
-            canRepair = true; // Allow repair after the swing starts
+            canRepair = true;
             animator.SetBool("isSwinging", true);
 
-            // Use animation length to reset swinging
             float animationLength = animator.GetCurrentAnimatorStateInfo(0).length;
             Invoke("ResetSwing", animationLength);
         }
@@ -69,21 +69,30 @@ public class HammerController : MonoBehaviour
     {
         isSwinging = false;
         animator.SetBool("isSwinging", false);
-        canRepair = false; // Prevent repairs after swing is complete
+        canRepair = false;
     }
 
-    void RepairBarricade()
+    void RepairBarricades()
     {
-        barricade.Repair(1); // Repair the barricade by 1 health
-        scrapText.UseScrap(1); // Subtract 1 scrap from the UI
-        canRepair = false; // Prevent repairing again until the next swing
+        foreach (var barricade in collidingBarricades)
+        {
+            if (scrapText.HasEnoughScrap(1) && barricade.Repair(1))
+            {
+                scrapText.UseScrap(1);
+            }
+        }
+        canRepair = false;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Barricade"))
         {
-            isCollidingWithBarricade = true; // Hammer is colliding with the barricade
+            Barricade barricade = other.GetComponent<Barricade>();
+            if (barricade != null)
+            {
+                collidingBarricades.Add(barricade);
+            }
         }
     }
 
@@ -91,7 +100,11 @@ public class HammerController : MonoBehaviour
     {
         if (other.CompareTag("Barricade"))
         {
-            isCollidingWithBarricade = false; // Hammer is no longer colliding with the barricade
+            Barricade barricade = other.GetComponent<Barricade>();
+            if (barricade != null)
+            {
+                collidingBarricades.Remove(barricade);
+            }
         }
     }
 }
