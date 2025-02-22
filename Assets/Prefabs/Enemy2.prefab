@@ -583,12 +583,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 3
+  maxHealth: 2
   healthBar: {fileID: 0}
   scrapMetalPrefab: {fileID: 0}
-  weaponPrefabs:
-  - {fileID: 0}
-  - {fileID: 0}
+  weaponPrefabs: []
   waveManager: {fileID: 0}
 --- !u!114 &8169669726208187817
 MonoBehaviour:

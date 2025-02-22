@@ -10,7 +10,8 @@ public class Enemy : MonoBehaviour
     // public float damage = 1f;
 
     [System.Obsolete]
-    void Awake(){
+    void Awake()
+    {
         healthBar = GetComponentInChildren<FloatingHealthBar>();
         if (healthBar == null)
         {
@@ -35,10 +36,7 @@ public class Enemy : MonoBehaviour
 
     void OnDestroy()
     {
-        if (waveManager != null)
-        {
-            waveManager.EnemyDefeated();
-        }
+        Die();
         SpawnScrapMetal();
         TryDropWeapon();
     }
@@ -66,16 +64,31 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage){
+    public void TakeDamage(float damage)
+    {
         health -= damage;
         healthBar.UpdateHealthBar(health, maxHealth);
         if(health <= 0){
             Die();
         }
     }
-    void Die(){
+
+    void Die()
+    {
+        Debug.Log(gameObject.name + " died. Notifying WaveManager.");
+        
+        if (waveManager != null) // Ensure waveManager exists to prevent errors
+        {
+            waveManager.EnemyDefeated(gameObject); // Now properly passing this enemy
+        }
+        else
+        {
+            Debug.LogError("WaveManager reference is missing on enemy: " + gameObject.name);
+        }
+
         Destroy(gameObject);
     }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Bullet")) // Ensure Enemy has the "Enemy" tag
