@@ -13,24 +13,24 @@ public class AutoTurret : MonoBehaviour
 
     void Update()
     {
-        FindTarget(); // Find the closest enemy
+        // Fetch upgraded stats from the upgrade manager
+        range = TurretUpgradeManager.Instance.GetUpgradedRange();
+        fireRate = TurretUpgradeManager.Instance.GetUpgradedFireRate();
+
+        FindTarget();
 
         if (target == null) return;
 
-        // Calculate direction to the enemy's center (using collider center)
         Vector3 targetCenter = target.GetComponent<Collider2D>().bounds.center;
         Vector3 direction = targetCenter - transform.position;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        // Apply rotation to the turret
         transform.rotation = Quaternion.Euler(0, 0, angle);
 
-        // Flip the turret sprite
         bool shouldFlip = angle > 90 || angle < -90;
         spriteRenderer.flipY = shouldFlip;
 
-        // Adjust bullet spawn point position based on flip
         if (shouldFlip)
         {
             TurretBulletSpawnPoint.localPosition = new Vector3(
@@ -48,15 +48,13 @@ public class AutoTurret : MonoBehaviour
             );
         }
 
-        // Keep bullet spawn rotation aligned properly
         TurretBulletSpawnPoint.rotation = Quaternion.identity;
 
-        // Fire bullets at a rate of `fireRate` bullets per second
         fireCooldown -= Time.deltaTime;
         if (fireCooldown <= 0f)
         {
             Shoot();
-            fireCooldown = 1f / fireRate; // Reset cooldown
+            fireCooldown = 1f / fireRate;
         }
     }
 

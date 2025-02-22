@@ -129,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 67883460}
   m_Layer: 0
-  m_Name: SpwanPoint16
+  m_Name: SpawnPoint16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrapText: {fileID: 89735791}
-  scrapCount: 100
+  scrapCount: 1000
 --- !u!1 &111004965
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,8 +537,8 @@ RectTransform:
   m_Children:
   - {fileID: 2021348333}
   - {fileID: 1960969282}
-  - {fileID: 810487698}
   - {fileID: 1315098949}
+  - {fileID: 810487698}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -769,7 +769,7 @@ GameObject:
   m_Component:
   - component: {fileID: 211152095}
   m_Layer: 0
-  m_Name: SpwanPoint6
+  m_Name: SpawnPoint6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1497,7 +1497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 398715701}
   m_Layer: 0
-  m_Name: SpwanPoint15
+  m_Name: SpawnPoint15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1604,7 +1604,7 @@ Transform:
   m_GameObject: {fileID: 421690897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3433,7 +3433,7 @@ GameObject:
   m_Component:
   - component: {fileID: 659735108}
   m_Layer: 0
-  m_Name: SpwanPoint10
+  m_Name: SpawnPoint10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3535,7 +3535,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 691506499}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 896158439}
+        m_TargetAssemblyTypeName: TurretUpgradeManager, Assembly-CSharp
+        m_MethodName: UpgradeFireRate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &691506499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3586,7 +3598,7 @@ GameObject:
   - component: {fileID: 695396895}
   - component: {fileID: 695396894}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: RangeLvl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3985,7 +3997,7 @@ GameObject:
   m_Component:
   - component: {fileID: 791822667}
   m_Layer: 0
-  m_Name: SpwanPoint13
+  m_Name: SpawnPoint13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4391,6 +4403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 896158438}
   - component: {fileID: 896158437}
+  - component: {fileID: 896158439}
   m_Layer: 0
   m_Name: UpgradeManager
   m_TagString: Untagged
@@ -4448,6 +4461,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &896158439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896158436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dfd9d8f94f1d344fab22913db888493, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turretRangeLevel: 1
+  turretFireRateLevel: 1
+  baseRange: 5
+  baseFireRate: 1
+  rangeLevelText: {fileID: 695396894}
+  fireRateLevelText: {fileID: 1113874617}
 --- !u!1 &920924000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4675,7 +4706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 971311409}
   m_Layer: 0
-  m_Name: SpwanPoint4
+  m_Name: SpawnPoint4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5166,7 +5197,7 @@ GameObject:
   - component: {fileID: 1113874618}
   - component: {fileID: 1113874617}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: FireRateLvl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5300,7 +5331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1144826579}
   m_Layer: 0
-  m_Name: SpwanPoint3
+  m_Name: SpawnPoint3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6089,7 +6120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1435365327}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 896158439}
+        m_TargetAssemblyTypeName: TurretUpgradeManager, Assembly-CSharp
+        m_MethodName: UpgradeRange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1435365327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7192,7 +7235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1609399914}
   m_Layer: 0
-  m_Name: SpwanPoint14
+  m_Name: SpawnPoint14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7223,7 +7266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1735151000}
   m_Layer: 0
-  m_Name: SpwanPoint2
+  m_Name: SpawnPoint2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7254,7 +7297,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1769300113}
   m_Layer: 0
-  m_Name: SpwanPoint1
+  m_Name: SpawnPoint1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7285,7 +7328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1776668402}
   m_Layer: 0
-  m_Name: SpwanPoint8
+  m_Name: SpawnPoint8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7316,7 +7359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1780674783}
   m_Layer: 0
-  m_Name: SpwanPoint7
+  m_Name: SpawnPoint7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8990,7 +9033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1951453414}
   m_Layer: 0
-  m_Name: SpwanPoint9
+  m_Name: SpawnPoint9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9080,7 +9123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970079911}
   m_Layer: 0
-  m_Name: SpwanPoint12
+  m_Name: SpawnPoint12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12205,7 +12248,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2105526133}
   m_Layer: 0
-  m_Name: SpwanPoint11
+  m_Name: SpawnPoint11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12315,7 +12358,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2125513298}
   m_Layer: 0
-  m_Name: SpwanPoint5
+  m_Name: SpawnPoint5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12397,63 +12440,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b403a0afc712ff24fa642f1285b33da8, type: 3}
---- !u!1001 &5230715016765182153
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2252537157101435713, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_Name
-      value: AutoTurret
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6150949172643810452, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -12466,7 +12452,6 @@ SceneRoots:
   - {fileID: 385473520}
   - {fileID: 1151777010}
   - {fileID: 421690899}
-  - {fileID: 5230715016765182153}
   - {fileID: 2110156901}
   - {fileID: 1093561049}
   - {fileID: 1232239539}
