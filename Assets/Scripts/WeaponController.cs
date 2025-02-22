@@ -6,6 +6,9 @@ public class WeaponController : MonoBehaviour
     public SpriteRenderer weaponSprite;
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
+    public float fireRate = 0.5f; // Default fire rate (seconds per shot)
+
+    private float nextFireTime = 0f; 
 
     void Update()
     {
@@ -28,14 +31,21 @@ public class WeaponController : MonoBehaviour
             bulletSpawnPoint.localPosition = new Vector3(bulletSpawnPoint.localPosition.x, Mathf.Abs(bulletSpawnPoint.localPosition.y), bulletSpawnPoint.localPosition.z);
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0) && Time.time >= nextFireTime) // Left mouse button + Fire rate check
         {
             Shoot();
+            nextFireTime = Time.time + fireRate; // Set the next fire time
         }
     }
 
     void Shoot()
     {
         Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+    }
+
+    public void SetFireRate(float newFireRate)
+    {
+        fireRate = newFireRate;
+        Debug.Log("Fire rate set to: " + fireRate);
     }
 }
