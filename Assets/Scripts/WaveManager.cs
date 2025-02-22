@@ -11,13 +11,16 @@ public class WaveManager : MonoBehaviour
     public float waveTime = 30f;
     public int waveNumber = 1;
     
-    public Transform[] spawnPoints; // Assign in inspector
-    public GameObject enemyPrefab; // Assign enemy1 prefab
-    public GameObject enemyPrefab2; // Assign enemy2 prefab
-    public int baseEnemyCount = 5; // Base enemy count per wave
+    public Transform[] spawnPoints; 
+    public GameObject enemyPrefab;
+    public GameObject enemyPrefab2;
+    public int baseEnemyCount = 5;
 
-    private int currentEnemies;
+    [Header("Debug Info")]
+    public int currentEnemiesAlive; 
+
     private bool isWaveActive;
+    private HashSet<GameObject> activeEnemies = new HashSet<GameObject>(); // Track active enemies
 
     void Start()
     {
@@ -26,9 +29,10 @@ public class WaveManager : MonoBehaviour
 
     void Update()
     {
-        if (currentState == GameState.Wave && currentEnemies <= 0 && isWaveActive)
+        if (currentState == GameState.Wave && activeEnemies.Count == 0 && isWaveActive)
         {
             isWaveActive = false;
+            Debug.Log("All enemies defeated! Starting preparation phase...");
             StartCoroutine(PreparationPhase());
         }
     }
@@ -47,17 +51,19 @@ public class WaveManager : MonoBehaviour
     {
         currentState = GameState.Wave;
         isWaveActive = true;
-        currentEnemies = baseEnemyCount + (waveNumber * 2); // Increase enemy count per wave
+        activeEnemies.Clear(); // Ensure the tracking list is empty before spawning
+        int enemiesToSpawn = baseEnemyCount + (waveNumber * 2);
+        currentEnemiesAlive = enemiesToSpawn; 
         
-        Debug.Log($"Wave {waveNumber} started! Spawning {currentEnemies} enemies.");
+        Debug.Log($"Wave {waveNumber} started! Spawning {enemiesToSpawn} enemies.");
 
-        for (int i = 0; i < currentEnemies; i++)
+        for (int i = 0; i < enemiesToSpawn; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(1f); // Delay between spawns
+            yield return new WaitForSeconds(1f);
         }
         
-        waveNumber++; // Increment wave after completion
+        waveNumber++;
     }
 
     void SpawnEnemy()
@@ -65,31 +71,36 @@ public class WaveManager : MonoBehaviour
         if (spawnPoints.Length == 0) return;
 
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-
-        GameObject enemyToSpawn;
-
-        if (waveNumber > 3) // Start mixing enemy types after wave 3
+        GameObject enemyToSpawn = (waveNumber > 3 && Random.value <= 0.33f) ? enemyPrefab2 : enemyPrefab;
+        
+        GameObject enemy = Instantiate(enemyToSpawn, spawnPoint.position, Quaternion.identity);
+        activeEnemies.Add(enemy); // Add enemy to tracking list
+        
+        Enemy enemyScript = enemy.GetComponent<Enemy>();
+        if (enemyScript != null)
         {
-            // 1/3 chance to spawn enemyPrefab2, 2/3 chance to spawn enemyPrefab
-            enemyToSpawn = (Random.value <= 0.33f) ? enemyPrefab2 : enemyPrefab;
+            enemyScript.waveManager = this;
         }
         else
         {
-            // Before wave 4, spawn only enemyPrefab
-            enemyToSpawn = enemyPrefab;
+            Debug.LogError("Spawned enemy does not have an Enemy script attached!");
         }
-
-        GameObject enemy = Instantiate(enemyToSpawn, spawnPoint.position, Quaternion.identity);
-        enemy.GetComponent<Enemy>().waveManager = this; // Reference for tracking
     }
 
-    public void EnemyDefeated()
+    public void EnemyDefeated(GameObject enemy)
     {
-        currentEnemies--;
+        if (activeEnemies.Contains(enemy)) // Ensure enemy is in the tracking list
+        {
+            activeEnemies.Remove(enemy); // Remove from tracking set
+            currentEnemiesAlive = activeEnemies.Count; // Update inspector value
+            Debug.Log($"Enemy defeated! Remaining enemies: {currentEnemiesAlive}");
+        }
 
-        if (currentEnemies <= 0 && isWaveActive)
+        if (activeEnemies.Count == 0 && isWaveActive)
         {
             Debug.Log("All enemies defeated! Returning to preparation phase.");
+            isWaveActive = false;
+            StartCoroutine(PreparationPhase());
         }
     }
 
