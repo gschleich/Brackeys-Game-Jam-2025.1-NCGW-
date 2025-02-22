@@ -2293,6 +2293,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 7564518394829127102, guid: 5fa264aeb5ec5bd4ba88de9f352c103f, type: 3}
   enemyPrefab2: {fileID: 7722651492796232464, guid: ed147b49d18820e4f9354aa50ea5a289, type: 3}
   baseEnemyCount: 2
+  currentEnemiesAlive: 0
 --- !u!4 &532068707
 Transform:
   m_ObjectHideFlags: 0
@@ -12269,7 +12270,7 @@ MonoBehaviour:
   - {fileID: 1780674783}
   - {fileID: 1776668402}
   - {fileID: 1951453414}
-  - {fileID: 0}
+  - {fileID: 659735108}
   - {fileID: 2105526133}
   - {fileID: 1970079911}
   - {fileID: 791822667}
