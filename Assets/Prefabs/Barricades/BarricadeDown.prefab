@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7804607317859823659}
   - component: {fileID: 2962074646043001833}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3025812631901178059}
   - component: {fileID: 720321456409276077}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3078902372184411673}
   - component: {fileID: 1849769201358498502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 4178592761406598733}
   - component: {fileID: 4438756848769736767}
   - component: {fileID: 5535318300524438459}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 5671362126631873046}
   - component: {fileID: 7546922809063601228}
   - component: {fileID: 6239386522216726437}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BarricadeDown
   m_TagString: Barricade
   m_Icon: {fileID: 0}
@@ -513,7 +513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1181414678399349871}
   - component: {fileID: 6648872274473717086}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 3080859007655913442}
   - component: {fileID: 5108439906610468958}
   - component: {fileID: 2618050372147205678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HealthBarCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +693,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6845080798035166789}
   - component: {fileID: 8219737516669240462}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Collider3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

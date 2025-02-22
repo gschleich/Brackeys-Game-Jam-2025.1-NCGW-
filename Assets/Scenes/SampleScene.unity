@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrapText: {fileID: 89735791}
-  scrapCount: 0
+  scrapCount: 100
 --- !u!1 &111004965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4400,11 +4400,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spikePrefab: {fileID: 7272834876618878476, guid: 47363fe7b1269194aa7280ae65fa371f, type: 3}
   spikePreviewPrefab: {fileID: 7272834876618878476, guid: 9c182f66e83208b4383d1910020e8965, type: 3}
+  barricadePrefabRight: {fileID: 1796099486209455492, guid: 5cd4232e31e6974438bfa687c43dd00c, type: 3}
+  barricadePrefabDown: {fileID: 3435037487872093248, guid: 458d8e188f3ceda438280f9fdfd682f9, type: 3}
+  barricadePrefabLeft: {fileID: 1796099486209455492, guid: d793f1efc729da945baa04376b1d3682, type: 3}
+  barricadePrefabUp: {fileID: 2953693950259873660, guid: 9b6dd7270ef2a684faeeaba54ac96ed7, type: 3}
+  barricadePreviewRight: {fileID: 1796099486209455492, guid: 46d21f9f5a4e93449ad365e000922d77, type: 3}
+  barricadePreviewDown: {fileID: 3435037487872093248, guid: 02341f691c66a694095c5dcb1bbc0ce0, type: 3}
+  barricadePreviewLeft: {fileID: 1796099486209455492, guid: 6f780d4a4a255dc4a8161d4927fe4d7b, type: 3}
+  barricadePreviewUp: {fileID: 2953693950259873660, guid: f08178c59e0eb4b4aaea1bc792ede5f7, type: 3}
   scrapText: {fileID: 89735793}
   menuToggle: {fileID: 166199293}
   spikeLayer:
     serializedVersion: 2
     m_Bits: 8
+  barricadeLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!4 &896158438
 Transform:
   m_ObjectHideFlags: 0
@@ -11871,7 +11882,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2046921154}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 896158437}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: BuyBarricade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2046921154
 MonoBehaviour:
   m_ObjectHideFlags: 0

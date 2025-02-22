@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2163395245226684168}
   - component: {fileID: 2286188826442422589}
   - component: {fileID: 5206675157369687127}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,8 +88,8 @@ GameObject:
   - component: {fileID: 1353258230732299001}
   - component: {fileID: 3566019819547458991}
   - component: {fileID: 8152066620921922153}
-  m_Layer: 6
-  m_Name: BarricadeRight
+  m_Layer: 0
+  m_Name: GhostBarricadeLeft
   m_TagString: Barricade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -105,7 +105,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 827475187589254848}
@@ -161,7 +161,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 100
   m_Sprite: {fileID: -1507170397845056903, guid: 87812f6656b773742844beaa5f2efe25, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -170,7 +170,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 1
+  m_SpriteSortPoint: 0
 --- !u!61 &1353258230732299001
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -281,7 +281,7 @@ GameObject:
   - component: {fileID: 8861764506476833829}
   - component: {fileID: 2764053171553184434}
   - component: {fileID: 2782389078015053485}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: HealthBarCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7528039679381887301}
   - component: {fileID: 5315325651092631173}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -459,7 +459,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4089749641970443770}
   - component: {fileID: 2330153517430878641}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6629366504779201351}
   - component: {fileID: 5481128761797428043}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -615,7 +615,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6122693607432531481}
   - component: {fileID: 1935234712301266520}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +693,7 @@ GameObject:
   m_Component:
   - component: {fileID: 855614477638135206}
   - component: {fileID: 8121087754840164047}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Collider4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
