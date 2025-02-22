@@ -3924,7 +3924,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 777339842}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 896158437}
+        m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
+        m_MethodName: BuyTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &777339842
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4408,6 +4420,8 @@ MonoBehaviour:
   barricadePreviewDown: {fileID: 3435037487872093248, guid: 02341f691c66a694095c5dcb1bbc0ce0, type: 3}
   barricadePreviewLeft: {fileID: 1796099486209455492, guid: 6f780d4a4a255dc4a8161d4927fe4d7b, type: 3}
   barricadePreviewUp: {fileID: 2953693950259873660, guid: f08178c59e0eb4b4aaea1bc792ede5f7, type: 3}
+  turretPrefab: {fileID: 2252537157101435713, guid: 4f7700045aac23746be29bb4c4035dde, type: 3}
+  ghostAutoTurretPrefab: {fileID: 2252537157101435713, guid: 1b7d4602d0a3df54683924305c8e32ab, type: 3}
   scrapText: {fileID: 89735793}
   menuToggle: {fileID: 166199293}
   spikeLayer:
@@ -4416,6 +4430,9 @@ MonoBehaviour:
   barricadeLayer:
     serializedVersion: 2
     m_Bits: 64
+  turretLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!4 &896158438
 Transform:
   m_ObjectHideFlags: 0

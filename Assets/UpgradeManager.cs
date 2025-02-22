@@ -16,16 +16,25 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private GameObject barricadePreviewLeft;
     [SerializeField] private GameObject barricadePreviewUp;
 
+    [Header("Turret Prefabs")]
+    [SerializeField] private GameObject turretPrefab;
+    [SerializeField] private GameObject ghostAutoTurretPrefab;
+
     [Header("General")]
     [SerializeField] private ScrapText scrapText;
     [SerializeField] private UpgradeMenuToggle menuToggle;
     [SerializeField] private LayerMask spikeLayer;
     [SerializeField] private LayerMask barricadeLayer;
+    [SerializeField] private LayerMask turretLayer; // Turret layer
 
     private bool isPlacingSpike = false;
     private bool isPlacingBarricade = false;
+    private bool isPlacingTurret = false;
+
     private GameObject currentPreview;
     private GameObject currentBarricadePreview;
+    private GameObject currentTurretPreview;
+
     private int barricadeRotationIndex = 0; // 0 = Right, 1 = Down, 2 = Left, 3 = Up
 
     private void Update()
@@ -37,6 +46,10 @@ public class UpgradeManager : MonoBehaviour
         if (isPlacingBarricade)
         {
             HandleBarricadePlacement();
+        }
+        if (isPlacingTurret)
+        {
+            HandleTurretPlacement();
         }
 
         // Rotate barricade on pressing R
@@ -201,6 +214,65 @@ public class UpgradeManager : MonoBehaviour
 
     #endregion
 
+    #region Turrets
+
+    public void BuyTurret()
+    {
+        int turretCost = 20;
+        if (scrapText.HasEnoughScrap(turretCost))
+        {
+            scrapText.UseScrap(turretCost);
+            menuToggle.CloseMenuWithoutResumingTime();
+            isPlacingTurret = true;
+
+            // Create a preview object
+            currentTurretPreview = Instantiate(ghostAutoTurretPrefab);
+        }
+        else
+        {
+            Debug.Log("Not enough scrap!");
+        }
+    }
+
+    private void HandleTurretPlacement()
+    {
+        Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 snappedPosition = SnapToGrid(mousePosition);
+
+        // Update preview position
+        if (currentTurretPreview != null)
+        {
+            currentTurretPreview.transform.position = snappedPosition;
+
+            // Change color based on placement validity
+            bool occupied = IsOccupiedForTurrets(snappedPosition);
+            SetPreviewColor(occupied ? Color.red : Color.green);
+
+            if (Input.GetMouseButtonDown(0) && !occupied)
+            {
+                PlaceTurret(snappedPosition);
+            }
+        }
+    }
+
+    private void PlaceTurret(Vector2 position)
+    {
+        Instantiate(turretPrefab, position, Quaternion.identity);
+        Destroy(currentTurretPreview);
+        isPlacingTurret = false;
+        menuToggle.OpenMenuWithoutResumingTime();
+    }
+
+    private bool IsOccupiedForTurrets(Vector2 position)
+    {
+        float checkRadius = 0.4f; // Adjust if needed
+        Collider2D hit = Physics2D.OverlapCircle(position, checkRadius, turretLayer | barricadeLayer);
+
+        return hit != null;
+    }
+
+    #endregion
+
     private Vector2 SnapToGrid(Vector2 position)
     {
         float gridSize = 1f; // Adjust based on your grid size
@@ -211,24 +283,34 @@ public class UpgradeManager : MonoBehaviour
 
     private void SetPreviewColor(Color color)
     {
-        // If it's barricade preview, set color of barricade preview
+        // For barricade preview, change the color of each sprite renderer
         if (currentBarricadePreview != null)
         {
-            SpriteRenderer renderer = currentBarricadePreview.GetComponent<SpriteRenderer>();
-            if (renderer != null)
-            {
-                renderer.color = color;
-            }
+            ChangeSpritesColor(currentBarricadePreview, color);
         }
 
-        // If it's spike preview, set color of spike preview
+        // For spike preview, change the color of the spike sprite renderer
         if (currentPreview != null)
         {
-            SpriteRenderer renderer = currentPreview.GetComponent<SpriteRenderer>();
-            if (renderer != null)
-            {
-                renderer.color = color;
-            }
+            ChangeSpritesColor(currentPreview, color);
+        }
+
+        // For turret preview, change the color of all sprites attached to the ghost turret
+        if (currentTurretPreview != null)
+        {
+            ChangeSpritesColor(currentTurretPreview, color);
+        }
+    }
+
+    // Helper method to change color of all sprites under a parent object
+    private void ChangeSpritesColor(GameObject parentObject, Color color)
+    {
+        // Get all sprite renderers in this object and its children
+        SpriteRenderer[] spriteRenderers = parentObject.GetComponentsInChildren<SpriteRenderer>();
+
+        foreach (var sprite in spriteRenderers)
+        {
+            sprite.color = color;
         }
     }
 }
