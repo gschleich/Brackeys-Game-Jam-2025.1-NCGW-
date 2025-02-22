@@ -4,7 +4,7 @@ using UnityEngine;
 public class ScrapText : MonoBehaviour
 {
     public TextMeshProUGUI scrapText;
-    int scrapCount;
+    public int scrapCount;
 
     private void OnEnable()
     {

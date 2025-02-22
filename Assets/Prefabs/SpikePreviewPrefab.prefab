@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 508026501521354669}
   - component: {fileID: 7313331607448354735}
   - component: {fileID: 796593984123143049}
-  m_Layer: 3
-  m_Name: GroundSpikes
+  m_Layer: 0
+  m_Name: SpikePreviewPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,9 +78,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 101
   m_Sprite: {fileID: 8852783132119356490, guid: 991c54493af5028418e77bd7d7cb762c, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.60784316}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
