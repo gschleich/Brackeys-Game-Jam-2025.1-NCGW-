@@ -14,10 +14,11 @@ public class WaveManager : MonoBehaviour
     public Transform[] spawnPoints; 
     public GameObject enemyPrefab;
     public GameObject enemyPrefab2;
+    public GameObject UIControls; // Reference for the UI Controls
     public int baseEnemyCount = 5;
 
     [Header("Debug Info")]
-    public int currentEnemiesAlive; 
+    public int currentEnemiesAlive;
 
     private bool isWaveActive;
     private HashSet<GameObject> activeEnemies = new HashSet<GameObject>(); // Track active enemies
@@ -41,6 +42,7 @@ public class WaveManager : MonoBehaviour
     {
         MusicManager.Instance.PlayMusic("PrepPhase");
         currentState = GameState.Preparation;
+        UIControls.SetActive(true); // Enable UI controls during prep phase
         Debug.Log($"Preparation Phase - Wave {waveNumber} starts in {preparationTime} seconds.");
         
         yield return new WaitForSeconds(preparationTime);
@@ -52,11 +54,12 @@ public class WaveManager : MonoBehaviour
     {
         MusicManager.Instance.PlayMusic("WavePhase");
         currentState = GameState.Wave;
+        UIControls.SetActive(false); // Disable UI controls during wave phase
         isWaveActive = true;
-        activeEnemies.Clear(); // Ensure the tracking list is empty before spawning
+        activeEnemies.Clear();
         int enemiesToSpawn = baseEnemyCount + (waveNumber * 2);
-        currentEnemiesAlive = enemiesToSpawn; 
-        
+        currentEnemiesAlive = enemiesToSpawn;
+
         Debug.Log($"Wave {waveNumber} started! Spawning {enemiesToSpawn} enemies.");
 
         for (int i = 0; i < enemiesToSpawn; i++)
@@ -64,7 +67,7 @@ public class WaveManager : MonoBehaviour
             SpawnEnemy();
             yield return new WaitForSeconds(1f);
         }
-        
+
         waveNumber++;
     }
 
