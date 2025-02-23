@@ -560,6 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeMenu: {fileID: 1315098948}
+  waveManager: {fileID: 532068706}
 --- !u!114 &166199294
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -3,12 +3,14 @@ using UnityEngine;
 public class UpgradeMenuToggle : MonoBehaviour
 {
     [SerializeField] private GameObject upgradeMenu;
+    [SerializeField] private WaveManager waveManager; // Reference to the WaveManager
     public bool IsMenuOpen => isMenuOpen;
     private bool isMenuOpen = false;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        // Only allow toggling during the Preparation Phase
+        if (waveManager.currentState == WaveManager.GameState.Preparation && Input.GetKeyDown(KeyCode.Tab))
         {
             ToggleUpgradeMenu();
         }
