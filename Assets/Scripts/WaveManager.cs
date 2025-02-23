@@ -14,6 +14,7 @@ public class WaveManager : MonoBehaviour
     public Transform[] spawnPoints; 
     public GameObject enemyPrefab;
     public GameObject enemyPrefab2;
+    public GameObject enemyPrefab3;
     public GameObject UIControls; // Reference for the UI Controls
     public GarageDoorController garageDoor; // Add this reference in the Inspector
     public int baseEnemyCount = 5;
@@ -83,11 +84,40 @@ public class WaveManager : MonoBehaviour
         if (spawnPoints.Length == 0) return;
 
         Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject enemyToSpawn = (waveNumber > 3 && Random.value <= 0.33f) ? enemyPrefab2 : enemyPrefab;
-        
+        GameObject enemyToSpawn;
+
+        float randomValue = Random.value; // Random number between 0 and 1
+
+        if (waveNumber > 5)
+        {
+            // 50% chance for enemy1, 40% for enemy2, 10% for enemy3
+            if (randomValue <= 0.50f)
+            {
+                enemyToSpawn = enemyPrefab;
+            }
+            else if (randomValue <= 0.90f) // 50% + 40% = 90%
+            {
+                enemyToSpawn = enemyPrefab2;
+            }
+            else // Remaining 10%
+            {
+                enemyToSpawn = enemyPrefab3;
+            }
+        }
+        else if (waveNumber > 3)
+        {
+            // 2/3 (≈66.7%) for enemy1, 1/3 (≈33.3%) for enemy2
+            enemyToSpawn = (randomValue <= 0.6667f) ? enemyPrefab : enemyPrefab2;
+        }
+        else
+        {
+            // Before wave 3, only spawn enemy1
+            enemyToSpawn = enemyPrefab;
+        }
+
         GameObject enemy = Instantiate(enemyToSpawn, spawnPoint.position, Quaternion.identity);
         activeEnemies.Add(enemy); // Add enemy to tracking list
-        
+
         Enemy enemyScript = enemy.GetComponent<Enemy>();
         if (enemyScript != null)
         {
@@ -98,6 +128,7 @@ public class WaveManager : MonoBehaviour
             Debug.LogError("Spawned enemy does not have an Enemy script attached!");
         }
     }
+
 
     public void EnemyDefeated(GameObject enemy)
     {

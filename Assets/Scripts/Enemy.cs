@@ -7,7 +7,7 @@ public class Enemy : MonoBehaviour
     public GameObject scrapMetalPrefab;
     public GameObject[] weaponPrefabs; // Assign weapons prefabs in the Inspector
     public WaveManager waveManager;
-    // public float damage = 1f;
+    public float attack = 1f;
 
     [System.Obsolete]
     void Awake()
@@ -111,5 +111,9 @@ public class Enemy : MonoBehaviour
 
             Destroy(other.gameObject); // Destroy bullet on impact
         }
+    }
+
+    public float GetAttack(){
+        return attack;
     }
 }

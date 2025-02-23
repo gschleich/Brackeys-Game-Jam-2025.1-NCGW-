@@ -585,9 +585,10 @@ MonoBehaviour:
   health: 0
   maxHealth: 2
   healthBar: {fileID: 0}
-  scrapMetalPrefab: {fileID: 0}
+  scrapMetalPrefab: {fileID: 4568040079630574216, guid: 8bcebad89fb230f4abd0ff6cdec21de2, type: 3}
   weaponPrefabs: []
   waveManager: {fileID: 0}
+  attack: 1
 --- !u!114 &8169669726208187817
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -30,9 +30,10 @@ public class BaseHealthManager : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        Enemy enemy = other.GetComponent<Enemy>(); // Get the Enemy component
+        if (enemy != null)
         {
-            TakeDamage(1);
+            TakeDamage(enemy.GetAttack()); // Call the corrected method
         }
     }
 

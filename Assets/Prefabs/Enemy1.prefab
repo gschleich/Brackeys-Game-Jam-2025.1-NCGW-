@@ -513,6 +513,7 @@ MonoBehaviour:
   scrapMetalPrefab: {fileID: 4568040079630574216, guid: 8bcebad89fb230f4abd0ff6cdec21de2, type: 3}
   weaponPrefabs: []
   waveManager: {fileID: 0}
+  attack: 2
 --- !u!114 &5197101829852353941
 MonoBehaviour:
   m_ObjectHideFlags: 0
