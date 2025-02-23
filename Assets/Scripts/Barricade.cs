@@ -27,12 +27,23 @@ public class Barricade : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        Enemy enemy = collision.GetComponent<Enemy>(); // Get the Enemy component
+        if (enemy != null)
         {
             TakeDamage(1);
-            Destroy(collision.gameObject);
+            if (enemy.enemyType == EnemyType.Boss) // Check if it's Enemy3
+            {
+                TakeDamage(1); // Barricade takes 1 damage
+            }
+            Destroy(enemy.gameObject); // Destroy other enemies on contact
         }
     }
+        // if (collision.CompareTag("Enemy"))
+        // {
+        //     TakeDamage(1);
+        //     Destroy(collision.gameObject);
+        // }
+    
 
     public void TakeDamage(int damage)
     {

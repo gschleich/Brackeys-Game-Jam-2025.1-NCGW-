@@ -85,54 +85,70 @@ public class WaveManager : MonoBehaviour
     }
 
     void SpawnEnemy()
+{
+    if (spawnPoints.Length == 0) return;
+
+    Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+    GameObject enemyToSpawn;
+
+    float randomValue = Random.value; // Random number between 0 and 1
+
+    if (waveNumber > 5)
     {
-        if (spawnPoints.Length == 0) return;
-
-        Transform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-        GameObject enemyToSpawn;
-
-        float randomValue = Random.value; // Random number between 0 and 1
-
-        if (waveNumber > 5)
+        // 50% chance for enemy1, 40% for enemy2, 10% for enemy3
+        if (randomValue <= 0.50f)
         {
-            // 50% chance for enemy1, 40% for enemy2, 10% for enemy3
-            if (randomValue <= 0.50f)
-            {
-                enemyToSpawn = enemyPrefab;
-            }
-            else if (randomValue <= 0.90f) // 50% + 40% = 90%
-            {
-                enemyToSpawn = enemyPrefab2;
-            }
-            else // Remaining 10%
-            {
-                enemyToSpawn = enemyPrefab3;
-            }
-        }
-        else if (waveNumber > 3)
-        {
-            // 2/3 (≈66.7%) for enemy1, 1/3 (≈33.3%) for enemy2
-            enemyToSpawn = (randomValue <= 0.6667f) ? enemyPrefab : enemyPrefab2;
-        }
-        else
-        {
-            // Before wave 3, only spawn enemy1
             enemyToSpawn = enemyPrefab;
         }
-
-        GameObject enemy = Instantiate(enemyToSpawn, spawnPoint.position, Quaternion.identity);
-        activeEnemies.Add(enemy); // Add enemy to tracking list
-
-        Enemy enemyScript = enemy.GetComponent<Enemy>();
-        if (enemyScript != null)
+        else if (randomValue <= 0.90f)
         {
-            enemyScript.waveManager = this;
+            enemyToSpawn = enemyPrefab2;
         }
         else
         {
-            Debug.LogError("Spawned enemy does not have an Enemy script attached!");
+            enemyToSpawn = enemyPrefab3;
         }
     }
+    else if (waveNumber > 3)
+    {
+        // 2/3 for enemy1, 1/3 for enemy2
+        enemyToSpawn = (randomValue <= 0.6667f) ? enemyPrefab : enemyPrefab2;
+    }
+    else
+    {
+        enemyToSpawn = enemyPrefab;
+    }
+
+    // Instantiate enemy
+    GameObject enemyObject = Instantiate(enemyToSpawn, spawnPoint.position, Quaternion.identity);
+    activeEnemies.Add(enemyObject); // Add enemy to tracking list
+
+    // Assign the correct EnemyType
+    Enemy enemyScript = enemyObject.GetComponent<Enemy>();
+    if (enemyScript != null)
+    {
+        enemyScript.waveManager = this;
+
+        // Assign the enemy type based on which prefab was used
+        if (enemyToSpawn == enemyPrefab)
+        {
+            enemyScript.enemyType = EnemyType.Regular;
+        }
+        else if (enemyToSpawn == enemyPrefab2)
+        {
+            enemyScript.enemyType = EnemyType.Strong;
+        }
+        else if (enemyToSpawn == enemyPrefab3)
+        {
+            enemyScript.enemyType = EnemyType.Boss; // Assign Enemy3 as "Boss"
+        }
+    }
+    else
+    {
+        Debug.LogError("Spawned enemy does not have an Enemy script attached!");
+    }
+}
+
 
 
     public void EnemyDefeated(GameObject enemy)

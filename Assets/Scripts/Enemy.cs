@@ -1,5 +1,12 @@
 using UnityEngine;
 
+public enum EnemyType
+{
+    Regular,
+    Strong,
+    Boss // Assign "Boss" to Enemy3
+}
+
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float health, maxHealth = 3f;
@@ -8,6 +15,9 @@ public class Enemy : MonoBehaviour
     public GameObject[] weaponPrefabs; // Assign weapons prefabs in the Inspector
     public WaveManager waveManager;
     public float attack = 1f;
+
+    public EnemyType enemyType; // Assign this in the Inspector or during instantiation
+
 
     [System.Obsolete]
     void Awake()
