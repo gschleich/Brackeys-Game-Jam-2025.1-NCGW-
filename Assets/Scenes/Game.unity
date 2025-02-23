@@ -2153,7 +2153,7 @@ MonoBehaviour:
   currentState: 0
   preparationTime: 10
   waveTime: 30
-  waveNumber: 6
+  waveNumber: 1
   spawnPoints:
   - {fileID: 1769300113}
   - {fileID: 1735151000}
