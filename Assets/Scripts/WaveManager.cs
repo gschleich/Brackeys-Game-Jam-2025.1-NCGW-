@@ -72,6 +72,9 @@ public class WaveManager : MonoBehaviour
 
         Debug.Log($"Wave {waveNumber} started! Spawning {enemiesToSpawn} enemies.");
 
+        // Start the wave text display
+        FindObjectOfType<WaveText>().StartWaveTextDisplay(waveNumber);
+
         for (int i = 0; i < enemiesToSpawn; i++)
         {
             SpawnEnemy();
