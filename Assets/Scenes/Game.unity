@@ -10917,13 +10917,11 @@ MonoBehaviour:
   slotImages:
   - {fileID: 1416066251}
   - {fileID: 111004967}
-  - {fileID: 1541753818}
   selectedSprite: {fileID: 296164403, guid: 0f4bc166e87ea664282da4096097b945, type: 3}
   deselectedSprite: {fileID: -813408481698981411, guid: 0f4bc166e87ea664282da4096097b945, type: 3}
   slotObjects:
   - {fileID: 284590556}
   - {fileID: 1425688395}
-  - {fileID: 397544412}
 --- !u!1 &1970079910
 GameObject:
   m_ObjectHideFlags: 0
