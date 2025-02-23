@@ -18,6 +18,7 @@ public class ScrapText : MonoBehaviour
 
     public void IncrementScrapCount()
     {
+        SoundManager.Instance.PlaySound2D("ScrapCollect");
         scrapCount++;
         scrapText.text = $"{scrapCount}";
     }

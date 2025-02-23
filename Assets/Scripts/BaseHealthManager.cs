@@ -40,6 +40,7 @@ public class BaseHealthManager : MonoBehaviour
     {
         if (healthAmount <= 0 && !isGameOver)
         {
+            SoundManager.Instance.PlaySound2D("BaseExplode");
             if (objectToToggle != null)
             {
                 objectToToggle.SetActive(true); // Activate the object when health hits 0

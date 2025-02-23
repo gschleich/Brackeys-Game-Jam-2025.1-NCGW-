@@ -40,6 +40,7 @@ public class WeaponController : MonoBehaviour
 
     void Shoot()
     {
+        SoundManager.Instance.PlaySound2D("Shoot");
         Instantiate(bulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
     }
 

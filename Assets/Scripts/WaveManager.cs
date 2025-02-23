@@ -39,6 +39,7 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator PreparationPhase()
     {
+        MusicManager.Instance.PlayMusic("PrepPhase");
         currentState = GameState.Preparation;
         Debug.Log($"Preparation Phase - Wave {waveNumber} starts in {preparationTime} seconds.");
         
@@ -49,6 +50,7 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator WavePhase()
     {
+        MusicManager.Instance.PlayMusic("WavePhase");
         currentState = GameState.Wave;
         isWaveActive = true;
         activeEnemies.Clear(); // Ensure the tracking list is empty before spawning

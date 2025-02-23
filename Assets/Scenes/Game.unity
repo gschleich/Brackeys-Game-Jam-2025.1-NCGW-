@@ -363,7 +363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrapText: {fileID: 89735791}
-  scrapCount: 1000
+  scrapCount: 100
 --- !u!1 &111004965
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +453,7 @@ GameObject:
   - component: {fileID: 166199290}
   - component: {fileID: 166199289}
   - component: {fileID: 166199293}
+  - component: {fileID: 166199294}
   m_Layer: 5
   m_Name: UI Canvas
   m_TagString: Untagged
@@ -559,6 +560,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeMenu: {fileID: 1315098948}
+--- !u!114 &166199294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166199288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55026430e667ae40804ad6326d6b683, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &171664550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,7 +1212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 363161604}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1395,7 +1408,7 @@ GameObject:
   - component: {fileID: 397544413}
   - component: {fileID: 397544414}
   - component: {fileID: 397544415}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EmptyHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1533,7 +1546,7 @@ GameObject:
   - component: {fileID: 421690905}
   - component: {fileID: 421690901}
   - component: {fileID: 421690904}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -3548,6 +3561,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 166199294}
+        m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
+        m_MethodName: PlayFireRateClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &691506499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3940,6 +3965,18 @@ MonoBehaviour:
       - m_Target: {fileID: 896158437}
         m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
         m_MethodName: BuyTurret
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 166199294}
+        m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
+        m_MethodName: PlayClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4626,7 +4663,7 @@ GameObject:
   - component: {fileID: 934814416}
   - component: {fileID: 934814418}
   - component: {fileID: 934814417}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CollectorCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5530,7 +5567,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1365633348}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6016,7 +6053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1425688396}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HammerPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6124,6 +6161,18 @@ MonoBehaviour:
       - m_Target: {fileID: 896158439}
         m_TargetAssemblyTypeName: TurretUpgradeManager, Assembly-CSharp
         m_MethodName: UpgradeRange
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 166199294}
+        m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
+        m_MethodName: PlayRangeClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6781,6 +6830,18 @@ MonoBehaviour:
       - m_Target: {fileID: 896158437}
         m_TargetAssemblyTypeName: UpgradeManager, Assembly-CSharp
         m_MethodName: BuySpikes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 166199294}
+        m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
+        m_MethodName: PlayClickSound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7604,7 +7665,7 @@ GameObject:
   - component: {fileID: 1820444499}
   - component: {fileID: 1820444500}
   - component: {fileID: 1820444501}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Hammer
   m_TagString: Hammer
   m_Icon: {fileID: 0}
@@ -8953,7 +9014,7 @@ GameObject:
   - component: {fileID: 1948018418}
   - component: {fileID: 1948018419}
   - component: {fileID: 1948018420}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MagnetCollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11955,6 +12016,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 166199294}
+        m_TargetAssemblyTypeName: ButtonSoundPlayer, Assembly-CSharp
+        m_MethodName: PlayClickSound
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2046921154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12387,9 +12460,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 421690899}
     m_Modifications:
+    - target: {fileID: 815436527466519112, guid: b403a0afc712ff24fa642f1285b33da8, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2046367554495578103, guid: b403a0afc712ff24fa642f1285b33da8, type: 3}
       propertyPath: m_Name
       value: Pistol
+      objectReference: {fileID: 0}
+    - target: {fileID: 2046367554495578103, guid: b403a0afc712ff24fa642f1285b33da8, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2738733342865964177, guid: b403a0afc712ff24fa642f1285b33da8, type: 3}
       propertyPath: m_LocalPosition.x

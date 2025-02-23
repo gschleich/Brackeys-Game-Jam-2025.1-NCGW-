@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1461733099015274355}
   - component: {fileID: 7099309945497865989}
   - component: {fileID: 5165065755796096913}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -87,7 +87,7 @@ GameObject:
   - component: {fileID: 4025539096513661234}
   - component: {fileID: 7356125452616765212}
   - component: {fileID: 3844872235956672557}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: HealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,7 +186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3341992830790259105}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   - component: {fileID: 563039242391716486}
   - component: {fileID: 5109010254307173525}
   - component: {fileID: 5214003122507962725}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: HealthBar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 1994441088785697031}
   - component: {fileID: 3994491286344116923}
   - component: {fileID: 5197101829852353941}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Enemy1
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -511,6 +511,7 @@ MonoBehaviour:
   maxHealth: 3
   healthBar: {fileID: 0}
   scrapMetalPrefab: {fileID: 4568040079630574216, guid: 8bcebad89fb230f4abd0ff6cdec21de2, type: 3}
+  weaponPrefabs: []
   waveManager: {fileID: 0}
 --- !u!114 &5197101829852353941
 MonoBehaviour:
@@ -536,7 +537,7 @@ GameObject:
   - component: {fileID: 6439729063726706372}
   - component: {fileID: 4113244518037555763}
   - component: {fileID: 1016661263301992769}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}

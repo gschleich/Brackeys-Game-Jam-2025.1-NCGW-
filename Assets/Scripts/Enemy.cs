@@ -18,6 +18,7 @@ public class Enemy : MonoBehaviour
             Debug.LogError("FloatingHealthBar component not found on enemy.");
         }
     }
+
     void Start()
     {
         health = maxHealth;
@@ -25,6 +26,7 @@ public class Enemy : MonoBehaviour
         {
             healthBar.UpdateHealthBar(health, maxHealth);
         }
+
         // Find the WaveManager in the scene automatically
         waveManager = FindObjectOfType<WaveManager>();
 
@@ -32,6 +34,13 @@ public class Enemy : MonoBehaviour
         {
             Debug.LogError("WaveManager not found in the scene!");
         }
+
+        // Ignore collisions between Enemy and Turret/Player layers
+        int enemyLayer = LayerMask.NameToLayer("Enemy");
+        int turretLayer = LayerMask.NameToLayer("Turret");
+        int playerLayer = LayerMask.NameToLayer("Player");
+        Physics2D.IgnoreLayerCollision(enemyLayer, turretLayer, true);
+        Physics2D.IgnoreLayerCollision(enemyLayer, playerLayer, true);
     }
 
     void OnDestroy()
@@ -66,6 +75,7 @@ public class Enemy : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        SoundManager.Instance.PlaySound2D("EnemyTakeDamage");
         health -= damage;
         healthBar.UpdateHealthBar(health, maxHealth);
         if(health <= 0){
