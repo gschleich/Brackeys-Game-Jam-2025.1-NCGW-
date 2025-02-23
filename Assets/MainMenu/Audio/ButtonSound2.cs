@@ -15,7 +15,7 @@ public class ButtonSound2 : MonoBehaviour
         {
             // If not, set this as the instance and mark it to not be destroyed
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else
         {
