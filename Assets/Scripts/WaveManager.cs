@@ -78,7 +78,7 @@ public class WaveManager : MonoBehaviour
         for (int i = 0; i < enemiesToSpawn; i++)
         {
             SpawnEnemy();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.2f);
         }
 
         waveNumber++;

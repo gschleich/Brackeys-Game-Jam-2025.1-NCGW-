@@ -514,6 +514,7 @@ MonoBehaviour:
   weaponPrefabs: []
   waveManager: {fileID: 0}
   attack: 5
+  enemyType: 0
 --- !u!114 &5197101829852353941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -526,7 +527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb8bfdbc286e114aa083740c1a34bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.6
+  speed: 0.9
 --- !u!1 &8399805255306870598
 GameObject:
   m_ObjectHideFlags: 0

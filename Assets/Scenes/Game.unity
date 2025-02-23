@@ -5145,7 +5145,7 @@ MonoBehaviour:
   turretRangeLevel: 1
   turretFireRateLevel: 1
   baseRange: 5
-  baseFireRate: 1
+  baseFireRate: 0.5
   rangeLevelText: {fileID: 695396894}
   fireRateLevelText: {fileID: 1113874617}
 --- !u!1 &920924000

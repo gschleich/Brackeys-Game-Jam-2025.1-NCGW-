@@ -9,7 +9,7 @@ public class TurretUpgradeManager : MonoBehaviour
     public int turretFireRateLevel = 1;
 
     public float baseRange = 5f;
-    public float baseFireRate = 1f;
+    public float baseFireRate = 0.5f;
 
     public TextMeshProUGUI rangeLevelText; // Assign UI text for range level
     public TextMeshProUGUI fireRateLevelText; // Assign UI text for fire rate level
@@ -37,12 +37,12 @@ public class TurretUpgradeManager : MonoBehaviour
 
     public float GetUpgradedRange()
     {
-        return baseRange + (turretRangeLevel - 1); // Increase range by 1 per level
+        return baseRange + (0.5f); // Increase range by 1 per level
     }
 
     public float GetUpgradedFireRate()
     {
-        return baseFireRate + (turretFireRateLevel - 1); // Increase fire rate by 1 per level
+        return baseFireRate + (0.5f); // Increase fire rate by 1 per level
     }
 
     public void UpgradeRange()
