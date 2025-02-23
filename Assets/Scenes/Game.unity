@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrapText: {fileID: 89735791}
-  scrapCount: 100
+  scrapCount: 0
 --- !u!1 &111004965
 GameObject:
   m_ObjectHideFlags: 0
