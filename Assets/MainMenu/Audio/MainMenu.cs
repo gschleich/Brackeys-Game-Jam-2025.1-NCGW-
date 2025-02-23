@@ -54,8 +54,24 @@ public class MainMenu : MonoBehaviour
 
     public void LoadVolume()
     {
-        // Use a default value of 0.5f if no volume value is saved
-        musicSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.5f); // Default value 0.5f
-        sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.5f);     // Default value 0.5f
+        // Check if it's the first time the game is opened
+        if (!PlayerPrefs.HasKey("FirstLaunch"))
+        {
+            // Set the default volume to 75% on the first launch
+            musicSlider.value = 0.75f; 
+            sfxSlider.value = 0.75f;
+
+            // Save this preference so it doesn't reset every time
+            PlayerPrefs.SetFloat("MusicVolume", 0.75f);
+            PlayerPrefs.SetFloat("SFXVolume", 0.75f);
+            PlayerPrefs.SetInt("FirstLaunch", 1); // Mark that the first launch has occurred
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            // Load saved volume settings if not the first launch
+            musicSlider.value = PlayerPrefs.GetFloat("MusicVolume", 0.5f);
+            sfxSlider.value = PlayerPrefs.GetFloat("SFXVolume", 0.5f);
+        }
     }
 }

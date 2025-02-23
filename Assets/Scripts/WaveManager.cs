@@ -16,6 +16,7 @@ public class WaveManager : MonoBehaviour
     public GameObject enemyPrefab2;
     public GameObject enemyPrefab3;
     public GameObject UIControls; // Reference for the UI Controls
+    public GameObject upgradeMenu; // Reference for the UpgradeMenu
     public GarageDoorController garageDoor; // Add this reference in the Inspector
     public int baseEnemyCount = 5;
 
@@ -60,6 +61,7 @@ public class WaveManager : MonoBehaviour
         MusicManager.Instance.PlayMusic("WavePhase");
         currentState = GameState.Wave;
         UIControls.SetActive(false); // Disable UI controls during wave phase
+        upgradeMenu.SetActive(false); // Ensure UpgradeMenu is toggled off
         isWaveActive = true;
         activeEnemies.Clear();
         int enemiesToSpawn = baseEnemyCount + (waveNumber * 2);

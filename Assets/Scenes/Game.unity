@@ -2113,6 +2113,7 @@ MonoBehaviour:
   enemyPrefab2: {fileID: 7722651492796232464, guid: ed147b49d18820e4f9354aa50ea5a289, type: 3}
   enemyPrefab3: {fileID: 7564518394829127102, guid: e4233172ae0c2814895ed9a0857ca665, type: 3}
   UIControls: {fileID: 1933970342}
+  upgradeMenu: {fileID: 1315098948}
   garageDoor: {fileID: 385473525}
   baseEnemyCount: 2
   currentEnemiesAlive: 0
