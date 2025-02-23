@@ -15,6 +15,7 @@ public class WaveManager : MonoBehaviour
     public GameObject enemyPrefab;
     public GameObject enemyPrefab2;
     public GameObject UIControls; // Reference for the UI Controls
+    public GarageDoorController garageDoor; // Add this reference in the Inspector
     public int baseEnemyCount = 5;
 
     [Header("Debug Info")]
@@ -44,9 +45,12 @@ public class WaveManager : MonoBehaviour
         currentState = GameState.Preparation;
         UIControls.SetActive(true); // Enable UI controls during prep phase
         Debug.Log($"Preparation Phase - Wave {waveNumber} starts in {preparationTime} seconds.");
-        
+
+        // Close the garage door at the start of preparation
+        garageDoor.CloseDoor();
+
         yield return new WaitForSeconds(preparationTime);
-        
+
         StartCoroutine(WavePhase());
     }
 
@@ -59,6 +63,9 @@ public class WaveManager : MonoBehaviour
         activeEnemies.Clear();
         int enemiesToSpawn = baseEnemyCount + (waveNumber * 2);
         currentEnemiesAlive = enemiesToSpawn;
+
+        // Open the garage door at the start of the wave
+        garageDoor.OpenDoor();
 
         Debug.Log($"Wave {waveNumber} started! Spawning {enemiesToSpawn} enemies.");
 

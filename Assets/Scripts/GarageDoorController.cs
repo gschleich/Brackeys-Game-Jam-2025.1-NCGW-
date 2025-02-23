@@ -2,37 +2,31 @@ using UnityEngine;
 
 public class GarageDoorController : MonoBehaviour
 {
-    public Animator doorAnimator; // Reference to the door's Animator
+    public Animator doorAnimator;
+    private bool isOpeningOrClosing = false;
+    private bool isOpen = false;
 
-    private int enemyCount = 0; // Tracks how many enemies are in the trigger
-    private bool isOpeningOrClosing = false; // To track if the door is in the opening or closing state
-    private bool isOpen = false; // Tracks if the door is open
-
-    private void OnTriggerEnter2D(Collider2D other)
+    private void Start()
     {
-        if (other.CompareTag("Enemy"))
-        {
-            enemyCount++;
+        doorAnimator.Play("Closed"); // Initial state set to Closed
+        isOpen = false;
+    }
 
-            if (enemyCount == 1 && !isOpeningOrClosing && !isOpen)
-            {
-                isOpeningOrClosing = true;
-                doorAnimator.Play("Opening");
-            }
+    public void OpenDoor()
+    {
+        if (!isOpeningOrClosing && !isOpen)
+        {
+            isOpeningOrClosing = true;
+            doorAnimator.Play("Opening");
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    public void CloseDoor()
     {
-        if (other.CompareTag("Enemy"))
+        if (!isOpeningOrClosing && isOpen)
         {
-            enemyCount--;
-
-            if (enemyCount <= 0 && !isOpeningOrClosing && isOpen)
-            {
-                isOpeningOrClosing = true;
-                doorAnimator.Play("Closing");
-            }
+            isOpeningOrClosing = true;
+            doorAnimator.Play("Closing");
         }
     }
 
@@ -49,12 +43,6 @@ public class GarageDoorController : MonoBehaviour
     {
         doorAnimator.Play("Closed");
         isOpeningOrClosing = false;
-        isOpen = false;
-    }
-
-    private void Start()
-    {
-        doorAnimator.Play("Closed"); // Initial state set to Closed
         isOpen = false;
     }
 }

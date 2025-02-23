@@ -1357,7 +1357,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385473517}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Density: 1
   m_Material: {fileID: 0}
@@ -2112,6 +2112,7 @@ MonoBehaviour:
   enemyPrefab: {fileID: 7564518394829127102, guid: 5fa264aeb5ec5bd4ba88de9f352c103f, type: 3}
   enemyPrefab2: {fileID: 7722651492796232464, guid: ed147b49d18820e4f9354aa50ea5a289, type: 3}
   UIControls: {fileID: 1933970342}
+  garageDoor: {fileID: 385473525}
   baseEnemyCount: 2
   currentEnemiesAlive: 0
 --- !u!4 &532068707
